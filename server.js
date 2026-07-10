@@ -15,12 +15,12 @@ app.get("/", (req, res) => {
 });
 
 // Connexion des routes
-app.use("/api/auth", require("./routes/authRoutes"));
-app.use("/api/products", require("./routes/productRoutes"));
-app.use("/api/cart", require("./routes/cartRoutes"));
-app.use("/api/orders", require("./routes/orderRoutes"));
-app.use("/api/admin", require("./routes/adminRoutes"));
-app.use("/api/payments", require("./routes/paymentRoutes"));
+//app.use("/api/auth", require("./routes/authRoutes"));
+app.use("/api/products", require("./itinéraires/productRoutes"));
+//app.use("/api/cart", require("./routes/cartRoutes"));
+//app.use("/api/orders", require("./routes/orderRoutes"));
+//app.use("/api/admin", require("./routes/adminRoutes"));
+//app.use("/api/payments", require("./routes/paymentRoutes"));
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
